@@ -28,6 +28,10 @@
     $persone = [$persona1, $persona2, $persona3];
    foreach ($persone as $value): 
 ?>
+<!-- 
+Si puo' usare anche questa forma, il risultato ottenuto e' lo stesso 
+<tr><td><?php /*echo $value['nome']; ?></td><td><?php echo $value['cognome']; ?></td><td><?php echo $value['eta'];*/?></td></tr> 
+-->
 <?php echo '<tr><td>' . $value['nome'] . '</td><td>' . $value['cognome'] . '</td><td>' . $value['eta'] . '</td></tr>';?>
 <?php endforeach?>
 </table> <br>
